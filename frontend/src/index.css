@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #6fb4ff;
+  --primary-hover: #5698e6;
+  --accent: #7cf7c0;
+  --text-dark: #e8edf5;
+  --text-gray: #9aabc8;
+  --text-light: #6f7c96;
+  --border-color: rgba(255, 255, 255, 0.06);
+  --bg-white: #0f1627;
+  --bg-light: radial-gradient(circle at 15% 20%, rgba(111, 180, 255, 0.08), transparent 24%),
+    radial-gradient(circle at 80% 15%, rgba(124, 247, 192, 0.08), transparent 26%),
+    radial-gradient(circle at 10% 85%, rgba(122, 141, 255, 0.08), transparent 24%),
+    #0a101d;
+  --bg-gray: rgba(255, 255, 255, 0.04);
+  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 14px 32px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 28px 70px rgba(0, 0, 0, 0.6);
+  --transition: all 0.22s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6fb4ff, #7cf7c0);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #5698e6, #63d7a6);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+::selection {
+  background: rgba(111, 180, 255, 0.22);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgba(111, 180, 255, 0.22);
+  color: white;
+}

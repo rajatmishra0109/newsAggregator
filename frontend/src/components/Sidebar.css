@@ -1,0 +1,127 @@
+.sidebar {
+  width: 260px;
+  background: rgba(17, 24, 43, 0.92);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 24px 0;
+  height: calc(100vh - 64px);
+  position: sticky;
+  top: 64px;
+  overflow-y: auto;
+  box-shadow: 14px 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.sidebar-header {
+  padding: 0 24px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 16px;
+}
+
+.sidebar-header h3 {
+  color: var(--text-dark);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.search-indicator {
+  background: linear-gradient(120deg, #6fb4ff, #7cf7c0);
+  color: #08101e;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 12px;
+}
+
+.category-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: transparent;
+  color: var(--text-gray);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: var(--transition);
+  text-align: left;
+  font-family: inherit;
+}
+
+.category-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-dark);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.category-link.active {
+  background: linear-gradient(120deg, #6fb4ff, #7cf7c0);
+  color: #08101e;
+  font-weight: 700;
+  border-color: transparent;
+  box-shadow: 0 12px 26px rgba(124, 247, 192, 0.22);
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.tips-section {
+  margin-top: 32px;
+  padding: 0 24px;
+}
+
+.tips-section h4 {
+  color: var(--text-dark);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tips-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tips-section li {
+  color: var(--text-gray);
+  font-size: 13px;
+  margin-bottom: 10px;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.tips-section li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
